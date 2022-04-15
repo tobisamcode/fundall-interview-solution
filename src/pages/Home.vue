@@ -14,16 +14,24 @@
     </header>
 
     <section class="mt-16">
+      <transition name="modal">
         <div class="image flex justify-center items-center">
           <img src="../../public/Group8.png" alt="">
         </div>
+      </transition>
         <div class="title mt-12 mb-20">
           <h1 class="title1 mb-4">Fundall Expense Tracker</h1>
           <h2>Mini Project Frontend</h2>
         </div>
+        
         <div class="author">
-          <p>by Babatunde Fashola</p>
+          <transition name="modal">
+            <p>by Babatunde Fashola</p>  
+          </transition>
+            
         </div>
+        
+
 
     </section>
   </div>
@@ -35,7 +43,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .logo {
   margin-top: 20px;
 }
@@ -70,5 +78,6 @@ section {
   line-height: 30px;
   font-weight: 700;
 }
+
 
 </style>
