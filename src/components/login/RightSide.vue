@@ -7,7 +7,8 @@
       </div>
 
       <form action="" class="mb-12" @submit="login" >
-      <div v-if="errorMsg" class="flex items-center justify-between mb-3 py-3 px-5 bg-red-400 text-white rounded">
+        <transition name="slide-fade">
+        <div v-if="errorMsg" class="flex items-center justify-between mb-3 py-3 px-5 bg-red-400 text-white rounded">
           {{ errorMsg }}
           <span @click="errorMsg = ''" class=" w-8 h-8 flex items-center justify-center rounded-full transition-colors cursor-pointer hover: bg-[rgba(0,0,0,.2)] ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -15,6 +16,7 @@
             </svg>
           </span>
         </div>
+        </transition>
         <div class="mb-7 input flex flex-col-reverse">
             <input class="w-full" type="text" placeholder="Enter Email or Username" required="" v-model="user.email"/>
             <label for="firstnmae" class="lab block mb-2">Email or Username</label>
@@ -145,5 +147,19 @@ input[type="submit"] {
   line-height: 22px;
   text-align: center;
 
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>
