@@ -5,7 +5,7 @@
     </div>
     <section class="mt-16">
       <div class="flex justify-center">
-        <img class="image" src="../../../public/Group 8.png" alt="">
+        <img class="image" src="../../../public/Group8.png" alt="">
       </div>
       <div class="title mt-20">
         <h3 class="title1 mb-6"><span class="welcome">Welcome!</span> Let's get to know you.</h3>

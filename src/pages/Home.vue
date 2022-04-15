@@ -15,7 +15,7 @@
 
     <section class="mt-16">
         <div class="image flex justify-center items-center">
-          <img src="../../public/Group 8.png" alt="">
+          <img src="../../public/Group8.png" alt="">
         </div>
         <div class="title mt-12 mb-20">
           <h1 class="title1 mb-4">Fundall Expense Tracker</h1>
