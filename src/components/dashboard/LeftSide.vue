@@ -2,7 +2,7 @@
   <div class="left">
     <div class="nav flex justify-between ">
       <router-link to="/" ><img src="../../../public/logo.png" alt=""></router-link>
-      <router-link to='/' @click="signOut" class="uppercase bg-[#4DE897] font-[700] mt-2 text-[600] rounded-[5px] p-3"> sign out</router-link>
+      <router-link to='/'> <button class="uppercase bg-[#4DE897] font-[700] mt-2 text-[600] rounded-[5px] p-3">sign out</button></router-link>
     </div>
   <section class="mt-16 flex flex-col justify-center gap-8">
     <div class="details flex gap-6">
@@ -89,31 +89,11 @@
 </template>
 
 
-<script setup>
-import { useStore } from 'vuex';
-import { useRouter } from 'vue-router';
-import { computed } from '@vue/reactivity';
+<script>
+export default {
+  
 
-
-const store = useStore();
-const router = useRouter();
-
-const signOut = () => {
-  sessionStorage.clear()
-  window.location.reload()
-  .then(() => {
-    router.push({
-      name: 'Login'
-    })
-  })
-  return {
-  user: computed(() => store.state.user.data),
-  signOut
 }
-}
-
-
-
 </script>
 
 <style scoped>
