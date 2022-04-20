@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-center" >
-    <div class="card flex flex-col -mt-36">
+    <div class="card flex flex-col -mt-16">
       <div class="heading">
         <h1 class="mb-2 font-bold">Holla</h1>
         <p class="mb-16">Sign in to the vibe!</p>
@@ -59,6 +59,7 @@ function login(ev) {
     router.push({ name: 'Dashboard'});
     window.location.reload()
   }).catch(err => {
+
     errorMsg.value = err.response.data.error.message;
   })
 }

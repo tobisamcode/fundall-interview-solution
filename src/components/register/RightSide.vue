@@ -48,6 +48,7 @@
 
 
 <script setup>
+
 import { ref } from 'vue';
 import store from "../../store";
 import { useRouter } from "vue-router";
@@ -79,14 +80,7 @@ function register(ev) {
   })
   
 }
-
 </script>
-
-
-
-
-
-
 
 
 <style scoped lang="css">
