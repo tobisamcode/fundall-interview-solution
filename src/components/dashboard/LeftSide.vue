@@ -104,8 +104,8 @@ const signOut = () => {
     })
   })
   return {
-  user: computed(() => store.state.user.data),
-  signOut
+    user: computed(() => store.state.user.data),
+    signOut
   }
 }
 </script>
