@@ -59,7 +59,7 @@ function login(ev) {
     router.push({ name: 'Dashboard'});
     window.location.reload()
   }).catch(err => {
-    errorMsg.value = "Incorrect password or username"
+    errorMsg.value = err.response.data.error.message;
   })
 }
 
