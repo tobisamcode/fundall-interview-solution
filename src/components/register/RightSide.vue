@@ -1,8 +1,18 @@
 <template>
   <div class="flex flex-col justify-center" >
-    <div class="card flex flex-col justify-center -mt-16">
+    <div class="card flex flex-col justify-center mt-16">
 
       <form action="" class="mb-12" @submit="register">
+        <transition name="slide-fade">
+          <div v-if="errorMsg" class="flex items-center justify-between mb-3 py-3 px-5 bg-red-400 text-white rounded">
+            {{ errorMsg }}
+            <span @click="errorMsg = ''" class=" w-8 h-8 flex items-center justify-center rounded-full transition-colors cursor-pointer hover: bg-[rgba(0,0,0,.2)] ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+          </div>
+        </transition>
         <div class="name flex justify-between gap-4 mb-8">
           <div class="input flex flex-col-reverse">
             <input class="first" type="text" placeholder="Enter First Name" required="" v-model="user.firstname" />
@@ -38,6 +48,7 @@
 
 
 <script setup>
+import { ref } from 'vue';
 import store from "../../store";
 import { useRouter } from "vue-router";
 
@@ -50,16 +61,21 @@ const user = {
   password_confirmation: ''
 };
 
+let errorMsg = ref('');
+
+
 function register(ev) {
   ev.preventDefault();
+
   store
   .dispatch('register', user)
   .then(()=> {
     router.push({
       name: 'Dashboard'
-    });
+    })
     window.location.reload()
-
+  }).catch(err => {
+    errorMsg.value = err.response.data.error.message;
   })
   
 }
