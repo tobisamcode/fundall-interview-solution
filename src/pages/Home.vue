@@ -67,9 +67,10 @@ export default {
 @media only screen and (max-width: 480px) {
 
   .btn {
-    font-size: 15px;
-    padding: 6px 10px;
+    font-size: 16px;
+    padding: 4px 10px;
     line-height: 16px;
+    border-radius: 3px;
   }
 }
 .active-link {

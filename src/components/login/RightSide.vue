@@ -28,7 +28,7 @@
         <input type="submit" value="login" class="w-full p-6 uppercase cursor-pointer">
       </form>
       
-      <p class="pa-link text-center">Don't have an account? <router-link class="link" to="/register">Register Here</router-link> </p>
+      <p class="pa-link sm:mt-1 text-center">Don't have an account? <router-link class="link" to="/register">Register Here</router-link> </p>
       <div class="parag mt-4 flex justify-center">
       <p class='pa-last w-96'>By clicking on Login, you agree to our <span class="text-[#4CE895]">Terms & Conditions and Privacy Policy</span></p>
       </div>
@@ -82,7 +82,7 @@ function login(ev) {
   .card {
     width: 400px;
     padding: 20px 15px;
-    height: 500px;
+    height: 580px;
   }
 }
 .heading h1 {
