@@ -50,7 +50,7 @@ export default {
 @media only screen and (max-width: 480px) {
   .logo {
     margin-top: 0px;
-    width: 60px;
+    /* width: 60px; */
     margin-left: 10px;
   }
 }
