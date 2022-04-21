@@ -15,7 +15,7 @@
     <section class="mt-16">
       
         <div class="image flex justify-center items-center">
-          <img src="../../public/Group8.png" class="sm:w-64" alt="">
+          <img src="../../public/Group8.png" alt="">
         </div>
       
         <div class="title mt-12 mb-20">
@@ -24,9 +24,9 @@
         </div>
         
         <div class="author">
-          <transition name="modal">
+         
             <p class="sm:text-[20px]">by Babatunde Fashola</p>  
-          </transition>
+          
             
         </div>
         
