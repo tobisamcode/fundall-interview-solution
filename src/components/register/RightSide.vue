@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center" >
-    <div class="card flex flex-col justify-center sm:align-center mt-16">
+  <div class=" flex flex-col justify-center" >
+    <div class="card flex flex-col justify-center sm:align-center mt-16 sm:mt-0">
 
       <form action="" class="sm:mb-0 mb-12" @submit="register">
         <transition name="slide-fade">
@@ -96,6 +96,7 @@ function register(ev) {
   .card {
     width: 400px;
     padding: 0 15px;
+    height: 500px;
   }
 }
 

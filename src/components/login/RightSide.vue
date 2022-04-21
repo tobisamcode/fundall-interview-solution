@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col justify-center" >
-    <div class="card flex flex-col -mt-16">
+    <div class="card flex flex-col sm:align-center">
       <div class="heading">
         <h1 class="mb-2 font-bold">Holla</h1>
-        <p class="mb-16">Sign in to the vibe!</p>
+        <p class="mb-16 sm:mb-8">Sign in to the vibe!</p>
       </div>
 
       <form action="" class="mb-12" @submit="login" >
@@ -17,7 +17,7 @@
             </span>
           </div>
         </transition>
-        <div class="mb-7 input flex flex-col-reverse">
+        <div class=" sm:mb-4 mb-7 input flex flex-col-reverse">
             <input class="w-full" type="text" placeholder="Enter Email or Username" required="" v-model="user.email"/>
             <label for="firstnmae" class="lab block mb-2">Email or Username</label>
         </div>
@@ -78,6 +78,13 @@ function login(ev) {
   border-radius: 6px;
   padding: 75px 93px;
 }
+@media (max-width:480px) {
+  .card {
+    width: 400px;
+    padding: 20px 15px;
+    height: 500px;
+  }
+}
 .heading h1 {
   font-size: 34px;
   line-height: 43px;
@@ -96,6 +103,11 @@ label {
   color: #30443C;
   font-weight: 500;
 }
+@media (max-width:480px) {
+  label {
+    font-size: 12px;
+  }
+}
 .first {
   width: 180px;
 }
@@ -107,6 +119,13 @@ label {
   border-radius: 4px;
   outline: 0;
   transition: .3s ease-in-out;
+}
+
+@media(max-width:480px) {
+  .input input {
+    padding: 6px;
+    border-radius: 3px;
+  }
 }
 .input > input:focus + label {
   color: #4CE895;
@@ -126,6 +145,13 @@ input[type="submit"] {
   background: #4DE897;
   box-shadow: 0px 4px 10px rgba(118, 212, 45, 0.3);
   border-radius: 3px;
+}
+@media(max-width:480px) {
+  input[type="submit"] {
+    font-size: 13px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .pa-link {

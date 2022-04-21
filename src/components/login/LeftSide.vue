@@ -1,14 +1,14 @@
 <template>
-  <div class="left">
+  <div class="left sm:mb-10">
     <div class="nav ml-0">
-      <router-link to="/" ><img class="sm:" src="../../../public/logo.png" alt=""></router-link>
+      <router-link to="/" ><img class="sm:w-16 sm:ml-3" src="../../../public/logo.png" alt=""></router-link>
     </div>
   <section class="mt-16">
     <div class="flex justify-center">
       <img class="image" src="../../../public/Group01.png" alt="">
     </div>
     <div class="title mt-20">
-      <h3 class="title1 mb-6"><span class="welcome">Welcome back!</span> We miss you.</h3>
+      <h3 class="title1 mb-6 sm:text-[30px]"><span class="welcome">Welcome back!</span> We miss you.</h3>
     </div>
   </section>
   </div>
@@ -30,6 +30,11 @@ export default {
 section {
   padding: 0 80px;
   align-content: center;
+}
+@media(max-width:480px) {
+  section {
+    padding: 0 40px;
+  } 
 }
 
 

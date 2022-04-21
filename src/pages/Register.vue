@@ -1,5 +1,5 @@
 <template>
-  <div class="main flex sm:flex-col gap-5">
+  <div class="main  flex sm:flex-col gap-5 sm:gap-2">
     <LeftSide/>
     <RightSide/>
   </div>
