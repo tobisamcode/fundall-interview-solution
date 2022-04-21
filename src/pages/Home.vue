@@ -64,15 +64,15 @@ export default {
   font-weight: 600;
 }
 
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
   .btn {
-    font-size: 16px;
+    font-size: 18px;
     padding: 4px 10px;
     line-height: 16px;
     border-radius: 3px;
   }
-} */
+}
 .active-link {
   background: #4CE895;
 }
