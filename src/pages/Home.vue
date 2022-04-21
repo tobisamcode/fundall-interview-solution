@@ -50,7 +50,7 @@ export default {
 @media only screen and (max-width: 480px) {
   .logo {
     margin-top: 0px;
-    width: 40px;
+    width: 60px;
     margin-left: 10px;
   }
 }
@@ -67,7 +67,7 @@ export default {
 @media only screen and (max-width: 480px) {
 
   .btn {
-    font-size: 12px;
+    font-size: 15px;
     padding: 6px 10px;
     line-height: 16px;
   }
