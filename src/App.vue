@@ -18,5 +18,13 @@
     margin-top: 1rem;
     font-family: 'Montserrat', sans-serif;
   }
+  @media (max-width: 480px) {
+    .main {
+      width: 100%;
+      max-width: 400px;
+      margin-inline: auto;
+      
+    }
+  }
 
 </style>
