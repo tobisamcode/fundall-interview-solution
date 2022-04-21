@@ -1,7 +1,7 @@
 <template>
   <div class="left sm:mb-10">
     <div class="nav ml-0">
-      <router-link to="/" ><img class="sm:w-16 sm:ml-3" src="../../../public/logo.png" alt=""></router-link>
+      <router-link to="/" ><img class=" sm:ml-3" src="../../../public/logo.png" alt=""></router-link>
     </div>
   <section class="mt-16">
     <div class="flex justify-center">
