@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col justify-center" >
-    <div class="card flex flex-col justify-center mt-16">
+    <div class="card flex flex-col justify-center sm:align-center mt-16">
 
-      <form action="" class="mb-12" @submit="register">
+      <form action="" class="sm:mb-0 mb-12" @submit="register">
         <transition name="slide-fade">
           <div v-if="errorMsg" class="flex items-center justify-between mb-3 py-3 px-5 bg-red-400 text-white rounded">
             {{ errorMsg }}
@@ -13,7 +13,7 @@
             </span>
           </div>
         </transition>
-        <div class="name flex justify-between gap-4 mb-8">
+        <div class="name flex justify-between sm:gap-1 gap-4 sm:mb-6 mb-8">
           <div class="input flex flex-col-reverse">
             <input class="first" type="text" placeholder="Enter First Name" required="" v-model="user.firstname" />
             <label for="firstnmae" class="block mb-2">First Name</label>
@@ -92,13 +92,25 @@ function register(ev) {
   border-radius: 6px;
   padding: 75px 93px;
 }
+@media (max-width:480px) {
+  .card {
+    width: 400px;
+    padding: 0 15px;
+  }
+}
+
 label {
   font-size: 16px;
   line-height: 20px;
   color: #30443C;
   font-weight: 500;
   transition: .3s ease-in-out;
-  
+}
+
+@media (max-width:480px) {
+  label {
+    font-size: 12px;
+  }
 }
 .first {
   width: 180px;
@@ -111,6 +123,13 @@ label {
   border-radius: 4px;
   outline: 0;
   transition: .3s ease-in-out;
+}
+
+@media(max-width:480px) {
+  .input input {
+    padding: 6px;
+    border-radius: 3px;
+  }
 }
 .input > input:focus + label {
   color: #4CE895;
@@ -129,6 +148,14 @@ input[type="submit"] {
   background: #4DE897;
   box-shadow: 0px 4px 10px rgba(118, 212, 45, 0.3);
   border-radius: 3px;
+}
+
+@media(max-width:480px) {
+  input[type="submit"] {
+    font-size: 13px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .pa-link {

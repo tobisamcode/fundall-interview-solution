@@ -1,8 +1,8 @@
 <template>
   <div class="left">
     <div class="nav ml-0">
-    <router-link to="/" ><img src="../../../public/logo.png" alt=""></router-link>
-  </div>
+      <router-link to="/" ><img class="sm:" src="../../../public/logo.png" alt=""></router-link>
+    </div>
   <section class="mt-16">
     <div class="flex justify-center">
       <img class="image" src="../../../public/Group01.png" alt="">
@@ -30,7 +30,11 @@ export default {
 section {
   padding: 0 80px;
   align-content: center;
-  
+}
+@media(max-width:480px) {
+  section {
+    padding: 0 0px;
+  } 
 }
 
 img .image{
