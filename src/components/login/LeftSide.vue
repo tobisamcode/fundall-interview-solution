@@ -31,11 +31,7 @@ section {
   padding: 0 80px;
   align-content: center;
 }
-@media(max-width:480px) {
-  section {
-    padding: 0 0px;
-  } 
-}
+
 
 img .image{
   width: 220px;
