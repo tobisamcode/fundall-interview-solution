@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center" >
     <div class="card flex flex-col sm:align-center">
       <div class="heading">
-        <h1 class="mb-2 font-bold">Holla</h1>
+        <h1 class="mb-2 sm:text-[25px]  text-[34px] leading-[43px] font-bold">Holla</h1>
         <p class="mb-16 sm:mb-8">Sign in to the vibe!</p>
       </div>
 
@@ -28,9 +28,9 @@
         <input type="submit" value="login" class="w-full p-6 uppercase cursor-pointer">
       </form>
       
-      <p class="pa-link sm:mt-1 text-center">Don't have an account? <router-link class="link" to="/register">Register Here</router-link> </p>
-      <div class="parag mt-4 flex justify-center">
-      <p class='pa-last w-96'>By clicking on Login, you agree to our <span class="text-[#4CE895]">Terms & Conditions and Privacy Policy</span></p>
+        <p class="pa-link sm:mt-1 text-center">Don't have an account? <router-link class="link" to="/register">Register Here</router-link> </p>
+        <div class="parag mt-4 flex justify-center">
+        <p class='pa-last w-96'>By clicking on Login, you agree to our <span class="text-[#4CE895]">Terms & Conditions and Privacy Policy</span></p>
       </div>
     </div >
   
@@ -77,17 +77,16 @@ function login(ev) {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.082937);
   border-radius: 6px;
   padding: 75px 93px;
+  margin-bottom: 20px;
 }
 @media (max-width:480px) {
   .card {
     width: 400px;
     padding: 20px 15px;
-    height: 580px;
+    height: 500px;
   }
 }
 .heading h1 {
-  font-size: 34px;
-  line-height: 43px;
   color: #1B2420;
 }
 
@@ -95,6 +94,12 @@ function login(ev) {
   font-size: 20px;
   line-height: 25px;
   color: #30443C;
+}
+@media (max-width: 480px) {
+  .heading p {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 label {
@@ -173,7 +178,12 @@ input[type="submit"] {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
 
+@media (max-width: 480px) {
+  .pa-link, .pa-last {
+    font-size: 14px;
+  }
 }
 
 .slide-fade-enter-active {

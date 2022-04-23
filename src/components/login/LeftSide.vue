@@ -5,10 +5,10 @@
     </div>
   <section class="mt-16">
     <div class="flex justify-center">
-      <img class="image" src="../../../public/Group01.png" alt="">
+      <img class="image sm:hidden" src="../../../public/Group01.png" alt="">
     </div>
-    <div class="title mt-20">
-      <h3 class="title1 mb-6 sm:text-[30px]"><span class="welcome">Welcome back!</span> We miss you.</h3>
+    <div class="title sm:mt-0 mt-20">
+      <h3 class="sm:text-[30px] text-[40px] sm:leading-[45px] leading-[51px] title1 mb-6"><span class="welcome">Welcome back!</span> We miss you.</h3>
     </div>
   </section>
   </div>
@@ -44,8 +44,6 @@ img .image{
 }
 
 .title1 {
-  font-size: 40px;
-  line-height: 51px;
   max-width: 370px;
   font-weight: 700;
 }
