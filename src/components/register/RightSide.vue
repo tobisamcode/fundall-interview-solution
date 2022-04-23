@@ -1,6 +1,6 @@
 <template>
   <div class=" flex flex-col justify-center" >
-    <div class="card flex flex-col justify-center sm:align-center mt-16 sm:mt-0">
+    <div class="card flex flex-col justify-center mt-16 sm:mt-0">
 
       <form action="" class="sm:mb-0 mb-12" @submit="register">
         <transition name="slide-fade">
@@ -40,7 +40,7 @@
       <p class="pa-link text-center">Already have an account? <router-link class="link" to="/login">Login Here</router-link> </p>
     </div >
 
-    <div class="parag mt-10 flex justify-center">
+    <div class="parag mt-10 sm:mt-5 sm:mb-5 flex justify-center">
       <p class='pa-last w-96'>By clicking on Login, you agree to our <span class="text-[#4CE895]">Terms & Conditions and Privacy Policy</span></p>
     </div>
   </div>
@@ -97,6 +97,7 @@ function register(ev) {
     width: 400px;
     padding: 0 15px;
     height: 500px;
+    margin-bottom: 0px;
   }
 }
 
@@ -179,7 +180,11 @@ input[type="submit"] {
   line-height: 22px;
   text-align: center;
 }
-
+@media (max-width: 480px) {
+  .pa-link, .pa-last {
+    font-size: 14px;
+  }
+}
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
