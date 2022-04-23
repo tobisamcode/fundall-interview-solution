@@ -32,6 +32,9 @@ section {
   align-content: center;
 }
 @media(max-width:480px) {
+  .left {
+    flex-basis: 20%;
+}
   section {
     padding: 0 40px;
   } 
